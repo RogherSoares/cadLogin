@@ -7,6 +7,6 @@ function acessar() {
     if(!loginEmail || !loginSenha) {
         alert("Favor preencher todos os campos");
     } else {
-        alert("Acesso liberado");
+        window.location.href = "cadastro.html";
     }
 }
