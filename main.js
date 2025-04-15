@@ -15,5 +15,9 @@ function acessar() {
 let dadosLista = [];
 
 function salvarUser() {
-    for()
+    let nomeUser = document.getElementById("nomeUser").value;
+    
+    if(nomeUser) {
+        dadosLista.push(nomeUser);
+    }
 }
