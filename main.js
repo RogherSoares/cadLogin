@@ -10,3 +10,10 @@ function acessar() {
         window.location.href = "cadastro.html";
     }
 }
+
+//criando variavel tipo array
+let dadosLista = [];
+
+function salvarUser() {
+    for()
+}
