@@ -6,5 +6,7 @@ function acessar() {
     //implementa estrutura que testa se todos os campos foram preenchidos
     if(!loginEmail || !loginSenha) {
         alert("Favor preencher todos os campos");
+    } else {
+        alert("Acesso liberado");
     }
 }
