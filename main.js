@@ -32,7 +32,7 @@ function criaLista() {
     let tabela = "<tr><th>Nome</th><th>Ações</th></tr>";
 
     for(let i = 0; i <= (dadosLista.length - 1); i++) {
-        tabela += "<tr><td>" + dadosLista[i] + "</td><td><button>editar</button><button>excuir</button></td></tr>";
+        tabela += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-warning'>editar</button><butto class='btn btn-danger'>excuir</butto></td></tr>";
 
         document.getElementById("tabela").innerHTML = tabela;
     }
