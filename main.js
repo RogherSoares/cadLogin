@@ -21,5 +21,7 @@ function salvarUser() {
         dadosLista.push(nomeUser);
         console.log(dadosLista);
         document.getElementById("nomeUser").value = "";
+    } else {
+        alert("Favor preencher o campo nome");
     }
 }
