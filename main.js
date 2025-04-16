@@ -20,6 +20,7 @@ function salvarUser() {
     if(nomeUser) {
         dadosLista.push(nomeUser);
         console.log(dadosLista);
+        criaLista();
         document.getElementById("nomeUser").value = "";
     } else {
         alert("Favor preencher o campo nome");
@@ -34,4 +35,5 @@ function criaLista() {
         tabela += "<tr><th>" + dadosLista[i] + "</th><th>Ações</th></tr>";
 
         document.getElementById("tabela").innerHTML = tabela;
+    }
 }
