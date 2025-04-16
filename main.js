@@ -31,7 +31,7 @@ function criaLista() {
     let tabela = "<tr><th>Nome</th><th>Ações</th></tr>";
 
     for(let i = 0; i <= (dadosLista.length - 1); i++) {
-        tabela += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-warning'>editar</button><butto class='btn btn-danger' onclick='excluir(this.parentNode.parentNode.rowIndex)'>excuir</butto></td></tr>";
+        tabela += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-warning' onclick='editar(this.parentNode.parentNode.rowIndex)'>editar</button><butto class='btn btn-danger' onclick='excluir(this.parentNode.parentNode.rowIndex)'>excuir</butto></td></tr>";
 
         document.getElementById("tabela").innerHTML = tabela;
     }
@@ -41,4 +41,10 @@ function criaLista() {
 function excluir(i) {
     dadosLista.splice((i-1), 1 );
     document.getElementById("tabela").deleteRow(i);
+}
+
+//função editar
+function editar(i) {
+    document.getElementById("nomeUser").value = dadosLista[(i-1)];
+    dadosLista.splice(dadosLista[(i-1)], 1); 
 }
