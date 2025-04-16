@@ -25,3 +25,8 @@ function salvarUser() {
         alert("Favor preencher o campo nome");
     }
 }
+
+//função para preecher a lista de cadastro
+function criaLista() {
+    
+}
