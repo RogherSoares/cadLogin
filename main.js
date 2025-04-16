@@ -28,5 +28,10 @@ function salvarUser() {
 
 //função para preecher a lista de cadastro
 function criaLista() {
-    
+    let tabela = "<tr><th>Nome</th><th>Ações</th></tr>";
+
+    for(let i = 0; i <= (dadosLista.length - 1); i++) {
+        tabela += "<tr><th>" + dadosLista[i] + "</th><th>Ações</th></tr>";
+
+        document.getElementById("tabela").innerHTML = tabela;
 }
